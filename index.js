@@ -28,3 +28,6 @@ let greeting = "Hi, " + name + " " +"Welcome back"
 let welcomeEL = document.getElementById("welcome-el")
 
 welcomeEL.innerText = greeting
+
+
+welcomeEL.innerText += " 👏" //welcomeEL.innerText = welcomeEL.innerText + " 👏"
