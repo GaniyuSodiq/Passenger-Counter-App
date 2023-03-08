@@ -1,11 +1,9 @@
-let lapsCompleted = 0
+let count = 0
 
-function increamentLaps() {
-    lapsCompleted = lapsCompleted + 1
+let countEl = document.getElementById("count-el")
+
+
+function increament() {
+    count = count + 1
+    countEl.innerText = count
 }
-
-increamentLaps()
-increamentLaps()
-increamentLaps()
-
-console.log(lapsCompleted)
