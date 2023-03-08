@@ -1,33 +1,16 @@
-// let count = 0
+let count = 0
 
-// let countEl = document.getElementById("count-el")
+let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
 
+function increament() {
+    count += 1
+    countEl.textContent = count
+}
 
-// function increament() {
-//     count = count + 1
-//     countEl.innerText = count
-// }
-
-// function save() {
-//     console.log(count)
-// }
-
-let username = "Sodiq"
-
-let message = "You have three new notfications"
-
-let messageToUser = message  + ", " + username + "!"
-
-console.log(messageToUser)
-
-let name = "Sidiq"
-let greeting = "Hi, " + name + " " +"Welcome back"
-
-
-
-let welcomeEL = document.getElementById("welcome-el")
-
-welcomeEL.innerText = greeting
-
-
-welcomeEL.innerText += " 👏" //welcomeEL.innerText = welcomeEL.innerText + " 👏"
+function save() {
+    let countDash = count + " - "
+    saveEl.textContent += countDash
+    count = 0
+    countEl.textContent = count
+}
